@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+	char plaintext[50], ciphertext[50];
+	int i, len;
+	
+	printf("Enter a message to encrypt: ");
+	gets(plaintext);
+	
+	len = strlen(plaintext);
+	
+	printf("Ciphertext: ");
+	
+	for(i=0; i<len; i++){
+		switch(plaintext[i]){
+			case 'a': ciphertext[i] = 'Q'; break;
+			case 'b': ciphertext[i] = 'W'; break;
+			case 'c': ciphertext[i] = 'E'; break;
+			case 'd': ciphertext[i] = 'R'; break;
+			case 'e': ciphertext[i] = 'T'; break;
+			case 'f': ciphertext[i] = 'Y'; break;
+			case 'g': ciphertext[i] = 'U'; break;
+			case 'h': ciphertext[i] = 'I'; break;
+			case 'i': ciphertext[i] = 'O'; break;
+			case 'j': ciphertext[i] = 'P'; break;
+			case 'k': ciphertext[i] = 'A'; break;
+			case 'l': ciphertext[i] = 'S'; break;
+			case 'm': ciphertext[i] = 'D'; break;
+			case 'n': ciphertext[i] = 'F'; break;
+			case 'o': ciphertext[i] = 'G'; break;
+			case 'p': ciphertext[i] = 'H'; break;
+			case 'q': ciphertext[i] = 'J'; break;
+			case 'r': ciphertext[i] = 'K'; break;
+			case 's': ciphertext[i] = 'L'; break;
+			case 't': ciphertext[i] = 'Z'; break;
+			case 'u': ciphertext[i] = 'X'; break;
+			case 'v': ciphertext[i] = 'C'; break;
+			case 'w': ciphertext[i] = 'V'; break;
+			case 'x': ciphertext[i] = 'B'; break;
+			case 'y': ciphertext[i] = 'N'; break;
+			case 'z': ciphertext[i] = 'M'; break;
+			default: ciphertext[i] = plaintext[i];
+		}
+		printf("%c", ciphertext[i]);
+	}
+	printf("\n");
+	return 0;
+}
